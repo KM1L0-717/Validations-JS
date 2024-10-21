@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Formulario con Mensajes</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <form class="validationForm">
+
+        <label class="mt-4">Nombres</label>
+        <input type="text" class="input-texto" name="Nombres"><br>
+
+        <label>Apellidos</label>
+        <input type="text" name="Apellidos"><br>
+        
+        <label">Correo Electrónico</label>
+        <input type="email" name="Correo Electrónico"><br>
+        
+        <label class="mt-4">Contraseña</label>
+        <input type="password" name="Contraseña"><br>
+        
+        <label class="mt-4">Fecha de Nacimiento</label>
+        <input type="date" class="input-fecha">
+        <span class="error error-fecha">Por favor selecciona una fecha.</span><br>
+        
+        <input type="range" class="input-rango" name="rango" min="0" max="100">
+        <span class="error error-rango">Por favor selecciona un valor de rango.</span><br>
+        
+        <label>Tipo de Documento</label>
+        <select name="Tipo de Documento">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="o1">Cédula de Ciudadanía</option>
+            <option value="o2">Cédula de Extranjería</option>
+            <option value="o3">Tarjeta de Identidad</option>
+        </select><br>
+        
+        <label class="mt-4">Número de Documento</label>
+        <input type="number" class="input-numero" name="Número de Documento"><br>
+        
+        <label class="mt-4">Número Telefonico</label>
+        <input type="number" class="input-numero" name="Número Telefonico"><br>
+
+        <label>Género</label>
+        <select name="seleccion">
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="o1">Masculino</option>
+            <option value="o2">Femenino</option>
+            <option value="o3">Prefiero no decirlo</option>
+        </select><br>
+
+        <label class="mt-4">Selecciona un hobbie</label><br>
+        <input type="radio" class="input-radio" value="o1">Escuchar Música<br>
+        <input type="radio" class="input-radio" value="o2">Bailar<br>
+        <input type="radio" class="input-radio" value="o3">Leer<br>
+        <input type="radio" class="input-radio" value="o4">Hacer ejercicio<br>
+        <span class="error error-radio">Por favor selecciona una opción de género.</span><br>
+        
+        <label class="mt-4">Selecciona tus habilidades</label><br>
+        <input type="checkbox" class="input-checkbox" name="terminos">Rápido aprendizaje<br>
+        <input type="checkbox" class="input-checkbox" name="terminos">Agilidad física<br>
+        <input type="checkbox" class="input-checkbox" name="terminos">Estratega<br>
+        <input type="checkbox" class="input-checkbox" name="terminos">Habilidad mental<br>
+        <span class="error error-checkbox">Debes seleccionar al menos una habilidad.</span><br>
+        
+        <label class="mt-4">Selecciona un color</label><br>
+        <input type="color" class="input-color" name="color">
+        <span class="error error-color">Por favor selecciona un color.</span><br>
+        
+        <br> 
+        <input type="reset" value="Limpiar Formulario"></input> 
+        <input type="submit" value="Enviar"></input>
+    </form>
+
+    <script src="Validations.js"></script>
+</body>
+</html>
